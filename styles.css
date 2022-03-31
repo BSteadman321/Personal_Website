@@ -1,3 +1,4 @@
+/* Settings for all elements of webpage */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +7,8 @@
     scroll-behavior: smooth;
 }
 
-.navbar {
+/* Navbar background */
+ .navbar {
     background: #131313;
     height: 80px;
     display: flex;
@@ -18,7 +20,8 @@
     z-index: 999;
 }
 
-.navbar__container {
+/* Navbar flex sizing and spacing for desktop */
+ .navbar__container {
     display: flex;
     justify-content: space-between;
     height: 80px;
@@ -29,6 +32,7 @@
     padding: 0 50px;
 }
 
+/* website logo creation, location, and colored gradient */
 #navbar__logo {
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
@@ -44,6 +48,7 @@
     font-size: 2rem;
 }
 
+/* Align website section icons within navbar */
 .navbar__menu {
     display: flex;
     align-items: center;
@@ -54,6 +59,7 @@
     height: 80px;
 }
 
+/* Website section color style and location */
 .navbar__links {
     color: #fff;
     display: flex;
@@ -65,6 +71,7 @@
     transition: all 0.3s ease;    
 }
 
+/* Projects button */
 .navbar__btn {
     display: flex;
     justify-content: center;
@@ -73,6 +80,7 @@
     width: 100%;
 }
 
+/* Projects button gradient and location */
 .button {
     display: flex;
     justify-content: center;
@@ -91,11 +99,13 @@
     transition: all 0.3s ease;
 }
 
+/* Changes navbar button color when hovering */
 .navbar__links:hover {
     color: #9518fc;
     transition: all 0.3s ease;    
 }
 
+/* Mobile settings for navbar */
 @media screen and (max-width: 960px) {
     .navbar__container {
         display: flex;
@@ -190,7 +200,7 @@
     }
 }
 
-/* Hero Section */
+/* Intro Section */
 .hero {
     background: #000000;
     background: linear-gradient(to right, #161616, #000000);
@@ -260,6 +270,8 @@
     border-bottom: 4px solid rgb(132, 0, 255);
 }
 
+
+/* Intro mobile */
 @media screen and (max-width: 768px) {
     .hero__heading {
         font-size: 60px;
@@ -294,6 +306,7 @@
     width: 100%;
 }
 
+/* About text column */
 .main__content h1 {
     font-size: 2rem;
     background-color: #fe3b6f;
@@ -307,6 +320,7 @@
     margin-bottom: 32px;
 }
 
+/* About card column */
 .main__content h2 {
     font-size: 4rem;
     background: #ff8177;
@@ -380,6 +394,7 @@
     text-align: center;
 }
 
+/* Colored gradient background behind icon in About section */
 .main__img--card {
     margin: 10px;
     height: 500px;
@@ -394,4 +409,96 @@
         #00dbde 0%,
         #fc00ff 100%
     );
+}
+
+/* Resizes fontawesome icon */
+.fa-solid, .fa-users {
+    font-size: 15rem;
+}
+
+/* About section mobile settings */
+#card-2 {
+    background: #ff512f;
+    background: -webkit-linear-gradient(
+        to right,
+        #dd2476,
+        #ff512f
+    );
+    background: linear-gradient(
+        to right,
+        #dd2476,
+        #ff512f
+    );
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 1100px) {
+    .main__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90%;
+    }
+
+    .main__img--container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__image--card {
+        height: 425px;
+        width: 425px;
+    }
+
+    .main__content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .main__content h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .main__content h2 {
+        font-size: 3rem;
+    }
+
+    .main__content p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main__img--card {
+        width: 250px;
+        height: 250px;
+    }
+
+    .fa-solid, .fa-users {
+        font-size: 4rem;
+    }
+
+    .main__content h1 {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .main__content h2 {
+        font-size: 2rem;
+    }
+
+    .main__content p {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .main__btn {
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
 }
