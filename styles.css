@@ -1,9 +1,10 @@
-Settings for all elements of webpage
+/*Settings for all elements of webpage */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;
+    /* font-family: 'Kumbh Sans', sans-serif; */
+    font-family: Consolas;
     scroll-behavior: smooth;
 }
 
@@ -72,7 +73,7 @@ Settings for all elements of webpage
     transition: all 0.3s ease;    
 }
 
-/* Projects button */
+/* Projects button ***Currently commented out*** */
 .navbar__btn {
     display: flex;
     justify-content: center;
@@ -81,7 +82,7 @@ Settings for all elements of webpage
     width: 100%;
 }
 
-/* Projects button gradient and location */
+/* Projects button gradient and location ***Currently commented out*** */
 .button {
     display: flex;
     justify-content: center;
@@ -203,13 +204,13 @@ Settings for all elements of webpage
 }
 
 /* Intro Section */
-.hero {
+.intro {
     background: #000000;
     background: linear-gradient(to right, #161616, #000000);
     padding: 200px 0;
 }
 
-.hero__container {
+.intro__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -221,13 +222,13 @@ Settings for all elements of webpage
     padding: 30px;
 }
 
-.hero__heading {
+.intro__heading {
     font-size: 100px;
     margin-bottom: 24px;
     color: #fff;
 }
 
-.hero__heading span {
+.intro__heading span {
     background: #56ab2f;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -238,7 +239,7 @@ Settings for all elements of webpage
     -moz-text-fill-color: transparent;
 }
 
-.hero__description {
+.intro__description {
     font-size: 60px;
     background: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0f9b0f, #3a5f3a);  /* Chrome 10-25, Safari 5.1-6 */
@@ -259,22 +260,22 @@ Settings for all elements of webpage
 
 /* Intro mobile */
 @media screen and (max-width: 768px) {
-    .hero__heading {
+    .intro__heading {
         font-size: 60px;
     }
 
-    .hero__description {
+    .intro__description {
         font-size: 40px;
     }
 }
 
 /* About Section */
-.main {
+.about {
     background-color: #131313;
     padding: 10rem 0;
 }
 
-.main__container {
+.about__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -287,13 +288,13 @@ Settings for all elements of webpage
     padding: 0 50px;
 }
 
-.main__content {
+.about__content {
     color: #fff;
     width: 100%;
 }
 
 /* About text column */
-.main__content h1 {
+.about__content h1 {
     font-size: 2rem;
     background-color: #fe3b6f;
     background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
@@ -307,7 +308,7 @@ Settings for all elements of webpage
 }
 
 /* About card column */
-.main__content h2 {
+.about__content h2 {
     font-size: 4rem;
     background: #ff8177;
     background: -webkit-linear-gradient(
@@ -328,13 +329,13 @@ Settings for all elements of webpage
     -moz-text-fill-color: transparent;
 }
 
-.main__content p {
+.about__content p {
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
 }
 
-.main__btn {
+.about__btn {
     font-size: 1.8rem;
     background: #283c86;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
@@ -345,18 +346,18 @@ Settings for all elements of webpage
     margin-top: 2rem;
     cursor: pointer;
     position: relative;
-    transition: all 0.35s;
+    transition: all .4s;
     outline: none;
 }
 
-.main__btn a {
+.about__btn a {
     position: relative;
     z-index: 2;
     color: #fff;
     text-decoration: none;
 }
 
-.main__btn:after {
+.about__btn:after {
     position: absolute;
     content: '';
     top: 0;
@@ -364,24 +365,24 @@ Settings for all elements of webpage
     width: 0;
     height: 100%;
     background: #26335e;
-    transition: all 0.35s;
+    transition: all .4s;
     border-radius: 4px;
 }
 
-.main__btn:hover {
+.about__btn:hover {
     color: #fff;
 }
 
-.main__btn:hover:after {
+.about__btn:hover:after {
     width: 100%;
 }
 
-.main__img--container {
+.about__img--container {
     text-align: center;
 }
 
 /* Colored gradient background behind icon in About section */
-.main__img--card {
+.about__img--card {
     margin: 10px;
     height: 500px;
     width: 500px;
@@ -410,7 +411,7 @@ Settings for all elements of webpage
 
 /* Mobile Responsiveness */
 @media screen and (max-width: 1100px) {
-    .main__container {
+    .about__container {
         display: grid;
         grid-template-columns: 1fr;
         align-items: center;
@@ -420,38 +421,38 @@ Settings for all elements of webpage
         height: 90%;
     }
 
-    .main__img--container {
+    .about__img--container {
         display: flex;
         justify-content: center;
     }
 
-    .main__image--card {
+    .about__image--card {
         height: 425px;
         width: 425px;
     }
 
-    .main__content {
+    .about__content {
         text-align: center;
         margin-bottom: 4rem;
     }
 
-    .main__content h1 {
+    .about__content h1 {
         font-size: 2.5rem;
         margin-top: 2rem;
     }
 
-    .main__content h2 {
+    .about__content h2 {
         font-size: 3rem;
     }
 
-    .main__content p {
+    .about__content p {
         margin-top: 1rem;
         font-size: 1.5rem;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .main__img--card {
+    .about__img--card {
         width: 250px;
         height: 250px;
     }
@@ -460,28 +461,28 @@ Settings for all elements of webpage
         font-size: 4rem;
     }
 
-    .main__content h1 {
+    .about__content h1 {
         font-size: 2rem;
         margin-top: 3rem;
     }
 
-    .main__content h2 {
+    .about__content h2 {
         font-size: 2rem;
     }
 
-    .main__content p {
+    .about__content p {
         margin-top: 2rem;
         font-size: 1.5rem;
     }
 
-    .main__btn {
+    .about__btn {
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
 }
 
 /* Contact Me Section */
-.services {
+.contact {
     background-color: #131313;
     display: flex;
     flex-direction: column;
@@ -492,7 +493,7 @@ Settings for all elements of webpage
 }
 
 /* "Contact Me" */
-.services h1 {
+.contact h1 {
     background-color: #ff8177;
     background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
     background-size: 100%;
@@ -504,13 +505,13 @@ Settings for all elements of webpage
     font-size: 3rem;
 }
 
-.services__wrapper {
+.contact__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
-.services__card {
+.contact__card {
     margin: 10px;
     height: 425px;
     width: 425px;
@@ -526,14 +527,58 @@ Settings for all elements of webpage
     transition: 0.3s ease-in;
 }
 
-.services__card:nth-child(2) {
+.contact__card:nth-child(2) {
     background: #348F50;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.services__card:nth-child(3) {
+.contact__card:nth-child(3) {
     background: #67B26F;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.contact__card h2 {
+    text-align: center;
+}
+
+.contact__card p {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+}
+
+.contact__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.contact__card button {
+    color: #fff;
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #131313;
+    font-size: 1rem;
+}
+
+.contact__card button:hover {
+    cursor: pointer;
+}
+
+.contact__card:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1300px){
+    .contact__wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer CSS */
