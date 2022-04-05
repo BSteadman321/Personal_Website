@@ -3,8 +3,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* font-family: 'Kumbh Sans', sans-serif; */
-    font-family: Consolas;
+    /* font-family: Consolas; */
+    font-family: Inconsolata, monospace;
+    /* text-shadow: 0 0 3px #C8C8C8; */
     scroll-behavior: smooth;
 }
 
@@ -73,7 +74,8 @@
     transition: all 0.3s ease;    
 }
 
-/* Projects button ***Currently commented out*** */
+/* Projects button */
+/* ***Currently commented out*** */
 .navbar__btn {
     display: flex;
     justify-content: center;
@@ -82,7 +84,8 @@
     width: 100%;
 }
 
-/* Projects button gradient and location ***Currently commented out*** */
+/* Projects button gradient and location */
+/* ***Currently commented out*** */
 .button {
     display: flex;
     justify-content: center;
@@ -257,6 +260,47 @@
     border-bottom: 4px solid rgb(24, 161, 47);
 }
 
+.intro__btn {
+    font-size: 1.8rem;
+    background: #283c86;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 20px 60px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all .4s;
+    outline: none;
+}
+
+.intro__btn a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+}
+
+.intro__btn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #26335e;
+    transition: all .4s;
+    border-radius: 4px;
+}
+
+.intro__btn:hover {
+    color: #fff;
+}
+
+.intro__btn:hover:after {
+    width: 100%;
+}
 
 /* Intro mobile */
 @media screen and (max-width: 768px) {
@@ -266,6 +310,11 @@
 
     .intro__description {
         font-size: 40px;
+    }
+
+    .intro__btn {
+        padding: 12px 36px;
+        margin: 2.5rem 0;
     }
 }
 
@@ -295,7 +344,7 @@
 
 /* About text column */
 .about__content h1 {
-    font-size: 2rem;
+    font-size: 4rem;
     background-color: #fe3b6f;
     background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
     background-size: 100%;
@@ -331,9 +380,10 @@
 
 .about__content p {
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
+
 
 .about__btn {
     font-size: 1.8rem;
@@ -437,7 +487,7 @@
     }
 
     .about__content h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin-top: 2rem;
     }
 
@@ -475,6 +525,7 @@
         font-size: 1.5rem;
     }
 
+
     .about__btn {
         padding: 12px 36px;
         margin: 2.5rem 0;
@@ -493,6 +544,7 @@
 }
 
 /* "Contact Me" */
+ 
 .contact h1 {
     background-color: #ff8177;
     background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
@@ -507,36 +559,36 @@
 
 .contact__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
 .contact__card {
     margin: 10px;
-    height: 425px;
-    width: 425px;
+    height: 350px;
+    width: 300px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #fff;
-    background: #134E5E;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff; 
+    background: #134E5E;  
+    background: -webkit-linear-gradient(to top, #71B280, #134E5E);  
+    background: linear-gradient(to top, #71B280, #134E5E); 
     
     transition: 0.3s ease-in;
 }
 
 .contact__card:nth-child(2) {
-    background: #348F50;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #348F50;  
+    background: -webkit-linear-gradient(to bottom, #56B4D3, #348F50);  
+    background: linear-gradient(to bottom, #56B4D3, #348F50); 
 }
 
 .contact__card:nth-child(3) {
-    background: #67B26F;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #67B26F;  
+    background: -webkit-linear-gradient(to left, #4ca2cd, #67B26F);  
+    background: linear-gradient(to left, #4ca2cd, #67B26F); 
 }
 
 .contact__card h2 {
@@ -577,8 +629,12 @@
 
 @media screen and (max-width: 1300px){
     .contact__wrapper {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
-/* Footer CSS */
+@media screen and (max-width: 768px){
+    .contact__wrapper {
+        grid-template-columns: 1fr;
+    }
+}

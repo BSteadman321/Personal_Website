@@ -10,3 +10,13 @@ const mobileMenu = () => {
 }
 
 menu.addEventListener('click', mobileMenu)
+
+// Copy Contacts /////////////////////////////////////////
+
+function copyPhone(){
+    navigator.clipboard.writeText("(321)609-1763");
+}
+
+function copyEmail(){
+    navigator.clipboard.writeText("BSteadman3@gmail.com");
+}

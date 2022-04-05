@@ -39,8 +39,8 @@
     <div class="intro" id="home">
         <div class="intro__container">
             <h1 class="intro__heading"> Hello! <span>I'm Bret,</span></h1>
-            <p class="intro__description">Software Engineer</p>
-            <button class="about__btn"><a href="#">Get to know me</a></button>
+            <!-- <p class="intro__description">Software Engineer</p> -->
+            <button class="intro__btn"><a href="#about">Get to know me</a></button>
         </div>
     </div>
 
@@ -51,10 +51,19 @@
                 <div class="about__img--card"><i class="fa-solid fa-desktop"></i></div>
             </div>
             <div class="about__content">
-                <h1>About Me Header</h1>
-                <h2>BIG ABOUT ME</h2>
-                <p>About Me Button to Contact Me</p>
-                <button class="about__btn"><a href="#">Schedule Call</a></button>
+                <h1>About Me</h1>
+                <!-- <h2>BIG ABOUT ME</h2> -->
+
+                <p>Currently a student at Florida State University, I am set to graduate with my Bachelor of 
+                    Science in Computer Science at the end of April '22.  My passion for understanding the 
+                    nuances of software development fuels my continual advancement and refinement of my skills
+                    in a variety of programming languages, database management software, and cloud technologies. 
+                    Eager to build on my academic foundations through working closely with a team of like 
+                    minded individuals to develop and maintain cutting edge technologies, I'm always interested
+                    in a challenge. Reach out via one of the links below to connect!
+                </p>
+
+                <button class="about__btn"><a href="#contact">Contact Me</a></button>
             </div>
 
         </div>
@@ -66,22 +75,38 @@
         <div class="contact__wrapper">
             <div class="contact__card">
                 <h2>Phone</h2>
-                <p>(321)609-1763</p>
-                <div class="contact__btn"><button>Phone Button</button></div>
+                <p>Copy to Clipboard:</p>
+                <div class="contact__btn">
+                    <button onclick="copyPhone()">(321)609-1763</button>
+                </div>
             </div>
             <div class="contact__card">
                 <h2>Email</h2>
-                <p>BSteadman3@gmail.com</p>
-                <div class="contact__btn"><button>Email Button</button></div>
+                <p>Copy to Clipboard:</p>
+                <div class="contact__btn">
+                    <button onclick="copyEmail()">BSteadman3@gmail.com</button>
+                </div>
             </div>
             <div class="contact__card">
                 <h2>GitHub</h2>
-                <p>Github</p>
-                <div class="contact__btn"><button>Github Button</button></div>
+                <p>Visit my Github:</p>
+                <div class="contact__btn">
+                    <button><a href="https://github.com/BSteadman321">BSteadman3</a></button>
+                </div>
+                <!-- <div class="contact__btn"><i class="fa-brands fa-github"></i></div> -->
+            </div>
+            <div class="contact__card">
+                <h2>LinkedIn</h2>
+                <p>Visit my LinkedIn:</p>
+                <div class="contact__btn">
+                    <button><a href="https://www.linkedin.com/in/bret-steadman-7749b0229/">Bret Steadman</a></button>
+                </div>
+                <!-- <div class="contact__btn"><i class="fa-brands fa-github"></i></div> -->
             </div>
         </div>
     </div>
 
+    <!-- Mobile Navbar Script -->
     <script src = "app.js"></script>
 </body>
 </html>
